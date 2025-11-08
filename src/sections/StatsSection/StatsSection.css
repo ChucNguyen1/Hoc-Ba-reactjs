@@ -1,0 +1,93 @@
+/* File: src/sections/StatsSection/StatsSection.css */
+.stats-section {
+  width: 100%;
+  background-color: #FAFAFA;
+}
+.stats-section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* === CỘT TRÁI (ĐỎ) === */
+.stats-section__left {
+  flex: 54;
+  background: linear-gradient(to right, #7D1900, #C1272D);
+  color: var(--mau-trang);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.stats-section__title {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.stats-section__title span {
+  font-size: 48px;
+  color: var(--mau-phu-vang);
+}
+
+.stats-section__divider {
+ width: 500px; 
+ height: 5px;
+ background-color: var(--mau-trang);
+ margin-top: 15px;
+ margin-bottom: 20px;
+}
+
+.stats-section__subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.9;
+}
+.stats-section__highlight {
+  color: var(--mau-phu-vang);
+  font-size: 30px;
+}
+/* === CỘT PHẢI (TRẮNG) === */
+.stats-section__right {
+  /* SỬA: Tỉ lệ 46% */
+  flex: 46;
+
+  color: var(--mau-chinh-chu);
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  background: var(--mau-trang);
+}
+.stats-section__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 cột */
+  gap: 30px 20px;
+  width: 100%;
+}
+.stats-section__item-number {
+  font-size: 30px;
+}
+.stats-section__item-text {
+  /* (Kế thừa font-weight: 700 từ body) */
+  font-size: 16px;
+  margin-top: 5px;
+}
+/* === DẤU CHẤM === */
+.stats-section__dots {
+  /* SỬA: Bỏ position: absolute */
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+
+  /* THÊM: Khoảng cách với 2 cột bên trên */
+  margin-top: 40px;
+}
+.stats-section__dots span {
+  width: 10px;
+  height: 10px;
+  background-color: var(--mau-phu-do);
+  border-radius: 50%;
+}

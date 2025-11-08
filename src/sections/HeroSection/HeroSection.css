@@ -1,0 +1,265 @@
+/* ===============================
+   TOÀN BỘ KHỐI HERO
+================================= */
+.hero {
+  display: flex;
+  align-items: center; /* Giữ căn giữa dọc cho 2 cột */
+  justify-content: space-between;
+  height: auto;
+  min-height: 60vh;
+  padding: 70px 40px 0;
+  background: var(--mau-trang);
+  border-radius: 0;
+  box-shadow: none;
+  overflow: hidden;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* ===============================
+   BÊN TRÁI
+================================= */
+.hero__content {
+  max-width: 610px;
+  z-index: 2;
+  padding-top: 50px; /* Đẩy khối bên trái xuống thấp */
+}
+.hero__tag {
+  transform: translateY(60px);
+}
+.hero__tag img {
+  width: 450px;
+  height: auto;
+}
+.hero__title {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--mau-chinh-chu);
+  line-height: 1.1;
+  margin: 20px 0 15px;
+}
+.hero__title span {
+  display: block;
+  color: var(--mau-chinh-chu);
+  font-size: 50px;
+  font-weight: 700;
+}
+.hero__subtitle {
+  display: block;
+  max-width: 350px;
+  border: 2.5px solid var(--mau-phu-vang);
+  border-radius: 10px;
+  color: var(--mau-chinh-chu);
+  font-weight: 700;
+  padding: 8px 20px;
+  margin-bottom: 25px;
+  font-size: 22px;
+  text-align: center;
+}
+.hero__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 462px;
+}
+.hero__text-block,
+.hero__list {
+  transform: translateY(-100px);
+}
+.hero__item {
+  background-color: var(--mau-chinh-chu);
+  color: var(--mau-trang);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3px;
+  padding: 1px 2px;
+  font-weight: 350;
+  font-size: 20px;
+  transition: opacity 0.3s ease;
+  transform: scale(0.8);  
+  transform-origin: left center;
+}
+.hero__item:hover {
+  opacity: 0.85;
+  cursor: pointer;
+}
+.hero__icon {
+  color: var(--mau-phu-vang);
+  font-size: 20px;
+  transform: rotate(90deg);
+  margin-right: 10px;
+}
+.hero__ellipse {
+  position: absolute;
+  width: 326px;
+  height: 326px;
+  left: -160px;   /* Đẩy ra mép trái */
+  top: 300px;     /* Tùy chỉnh cao thấp */
+  background: #FC461E;
+  filter: blur(80px);
+  border-radius: 50%;
+  z-index: 0;     /* Đặt dưới các phần khác */
+}
+/* =================================
+   SỐ 01, 02, 03
+================================= */
+.hero__number {
+  font-size: 30px;
+  font-weight: 800;
+  background: linear-gradient(270deg, #c1272d 0%, #ffde91 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+.hero__number--1,
+.hero__number--2,
+.hero__number--3 {
+  background-color: transparent;
+}
+/* ===============================
+   BÊN PHẢI
+================================= */
+.hero__image {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__gradient-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20%, -50%);
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(to bottom, #d05759, #9795FF00);
+  border-radius: 50%;
+  z-index: 0;
+}
+.hero__student {
+  width: 100%;
+  max-width: 400px;
+  z-index: 1;
+   transform: translateX(100px);
+}
+/* ===============================
+   CÁC BUBBLE / CTA
+================================= */
+.hero__bubble {
+  position: absolute;
+  background: var(--mau-trang);
+  color: var(--mau-chinh-chu);
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 20px;
+  /* Cập nhật: Shadow mới từ Figma (nhẹ hơn) */
+  box-shadow: 0 3.6px 18.2px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  z-index: 2;
+  white-space: nowrap;
+}
+.hero__bubble strong {
+  color: var(--mau-chinh-chu);
+}
+.hero__bubble--top {
+  top: 10%;
+  left: 15%;
+  font-weight: 500;
+  height: 40px;
+  font-size: 15px;
+  color: #17012C;
+  transform: translateY(50px);
+}
+.hero__bubble--top strong {
+  color: #D80F0C;
+  font-weight: 700; 
+}
+.hero__bubble--top::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(100%);
+  border: 8px solid transparent;
+  border-top-color: var(--mau-trang);
+}
+.hero__bubble-icon {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #4caf50;
+}
+.hero__leaf-icon {
+  font-size: 12px;
+}
+
+.hero__cta {
+  position: absolute;
+  top: 5%;
+  right: -2%;
+  height: 30px;
+  background: var(--mau-trang);
+  color: var(--mau-chinh-chu);
+  font-weight: 700;
+  padding: 6px 6px;
+  border-radius: 5px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.hero__underline {
+  height: 3px;
+  background: var(--mau-chinh-chu);
+}
+.hero__bubble--bottom {
+  bottom: -5%;
+  right: 20%;
+  height: 40px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #17012C;
+}
+.hero__bubble--bottom strong {
+  font-size: 15px;
+  color: #17012C; 
+  display: block;
+  font-weight: 500;
+}
+.hero__bubble--bottom span {
+  color: #D80F0C;
+  font-weight: 700;
+}
+/* ===============================
+   HÌNH SÁCH & DẤU CHẤM TRANG TRÍ
+================================= */
+.hero__book {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 120px;
+  transform: rotate(-15deg);
+  z-index: 1;
+}
+.hero__dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+.hero__dots span {
+  width: 10px;
+  height: 10px;
+  background-color: var(--mau-phu-do);
+  border-radius: 50%;
+}

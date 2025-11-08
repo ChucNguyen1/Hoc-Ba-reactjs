@@ -1,0 +1,168 @@
+/* File: src/sections/CoursesSection/CoursesSection.css (Đã sửa lỗi tỉ lệ) */
+/* === PHẦN SECTION (CHA) === */
+.courses-section {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.courses-section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.courses-section__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+/* === PHẦN CARD (CON) === */
+.course-card {
+  position: relative;
+  transition: transform 0.3s ease;
+  margin: 0 auto; /* Căn giữa card */
+  /* --- CẬP NHẬT (SỬA LỖI TỈ LỆ) --- */
+ 
+  /* 1. Cho phép card co giãn theo cột grid */
+  width: 100%;
+ 
+  /* 2. Giới hạn max-width (lấy từ Figma) */
+  max-width: 338.87px;
+  /* 3. XÓA BỎ height: 514.61px (Gây méo) */
+  height: auto;
+ 
+  /* 4. THÊM MỚI: Tự động tính chiều cao
+         để giữ đúng tỉ lệ Figma */
+  aspect-ratio: 338.87 / 514.61;
+}
+.course-card:hover {
+  transform: translateY(-10px);
+}
+/* * (Phần viền và content dùng 'inset'
+ * nên tự động co giãn theo, không cần sửa)
+ */
+.course-card__border {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(90deg, var(--mau-phu-vang), var(--mau-phu-do));
+  border-radius: 113.517px;
+}
+
+.course-card__content {
+  position: absolute;
+  z-index: 2;
+  background-color: var(--mau-trang);
+  top: 4.2px;
+  left: 4.2px;
+  right: 4.2px;
+  bottom: 4.2px;
+  border-radius: 113.517px;
+  padding: 40px 30px 60px 30px;
+  text-align: center;
+}
+
+/* Nền icon lục giác */
+.course-card__icon {
+  width: 100px;
+  height: 100px;
+  background-color: var(--mau-phu-xanh-nhat);
+  border: 0.84px solid #EAF3F8;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.course-card__icon img {
+  width: 60px;
+  height: auto;
+}
+/* Tiêu đề card */
+.course-card__title {
+  color: var(--mau-den);
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
+/* Mô tả card */
+.course-card__description {
+  color: #504E4E;
+  opacity: 0.8;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.course-card__button {
+  width: 100%;
+ height: 100%;
+
+ /* GIỮ NGUYÊN: Các style hình dạng */
+ background-color: var(--mau-trang);
+ border: none;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+ text-decoration: none;
+ color: var(--mau-chinh-chu);
+ transition: background-color 0.3s ease;
+}
+
+/* --- THÊM CLASS MỚI NÀY VÀO --- */
+/* Đây là LỚP ĐỔ BÓNG (Nằm dưới) */
+.course-card__button-wrapper {
+ /* 1. Lấy style VỊ TRÍ từ nút cũ */
+ position: absolute;
+ bottom: -30px;
+ left: 50%;
+ transform: translateX(-50%);
+ z-index: 3;
+
+ /* 2. Lấy style KÍCH THƯỚC từ nút cũ */
+ width: 50px;
+ height: 60px;
+
+ /* 3. Lấy style BÓNG (dùng filter) */
+ filter: drop-shadow(0 10px 15px var(--mau-phu-xanh-dam));
+}
+
+
+/* --- SỬA LẠI CLASS CŨ NÀY --- */
+/* Đây là LỚP HÌNH DẠNG (Nằm trên) */
+.course-card__button {
+ /* XÓA: Bỏ hết position, bottom, left, transform, z-index 
+    (Vì wrapper đã giữ rồi) */
+ 
+ /* SỬA: Bắt nó lấp đầy cái wrapper */
+ width: 100%;
+ height: 100%;
+
+ background-color: var(--mau-trang);
+ border: none;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+ text-decoration: none;
+ color: var(--mau-chinh-chu);
+ transition: background-color 0.3s ease;
+
+}
+.course-card__button:hover {
+  background-color: var(--mau-phu-xanh-dam);
+  border-color: var(--mau-phu-xanh-dam);
+}
+
+.course-card__button-icon {
+  font-size: 40px;
+  line-height: 1;
+  transform: rotate(-45deg);
+  color: var(--mau-phu-xanh-dam);
+}
+
+.course-card__button-icon:hover {
+  color: var(--mau-chinh-chu);
+}

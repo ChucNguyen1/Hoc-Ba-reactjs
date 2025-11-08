@@ -1,0 +1,107 @@
+/* File: src/sections/SuccessIntroSection/SuccessIntroSection.css */
+.success-intro-section {
+  width: 100%;
+  background-color: var(--mau-trang);
+  padding: 80px 0;
+  overflow: hidden; /* Chống tràn */
+}
+.success-intro-section__container {
+  /* SỬA: Bỏ flex đi, container chỉ căn giữa */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+}
+/* SỬA: Style cho HEADING NẰM TRÊN */
+.success-intro-section__title {
+  font-size: 35px;
+  line-height: 1.3;
+  color: var(--mau-chinh-chu);
+  margin-top: 0;
+  text-align: center; 
+  margin-bottom: 40px;
+  font-weight: 700px;
+  
+}
+/* THÊM: Wrapper cho 2 cột */
+.success-intro-section__columns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+/* === CỘT TRÁI === */
+.success-intro-section__content {
+  flex: 1;
+  max-width: 50%;
+}
+.success-intro-section__decor-book {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 130px;
+  height: auto;
+  transform: rotate(25deg);
+}
+/* (Xóa style title ở đây) */
+.success-intro-section__benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: 0;
+}
+.success-intro-section__benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--mau-chinh-chu); 
+  color: var(--mau-trang);
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: 0 5px 15px rgba(216, 15, 12, 0.2);
+}
+.success-intro-section__benefit-icon {
+  font-size: 20px;
+  color: var(--mau-chinh-chu);
+}
+
+/* THÊM CLASS MỚI NÀY (Div trắng bọc ngoài) */
+.success-intro-section__benefit-icon-wrapper {
+ background-color: var(--mau-trang);
+ 
+ /* Tạo hình tròn */
+ width: 28px;
+ height: 28px;
+ border-radius: 20%;
+ 
+ /* Căn icon vào giữa */
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+ /* Để nó không bị co lại */
+ flex-shrink: 0;
+}
+
+/* === CỘT PHẢI === */
+.success-intro-section__image-wrapper {
+  flex: 1;
+  max-width: 50%;
+  position: relative; /* Để chứa icon trang trí */
+}
+.success-intro-section__main-image {
+  width: 85%;
+  height: auto;
+  z-index: 1;
+  position: relative;
+}
+.success-intro-section__decor-page {
+  position: absolute;
+  top: -50px;
+  right: 30px;
+  width: 200px;
+  z-index: 2; 
+}

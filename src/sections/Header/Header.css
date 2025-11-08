@@ -1,0 +1,100 @@
+/* Block: header */
+.header {
+  width: 100%;
+  background-color: var(--mau-trang); /* Cập nhật: Dùng màu global */
+  padding: 10px 0;
+  
+  /* Yêu cầu 1: Header dính ở trên */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Đảm bảo header luôn ở trên cùng */
+
+  /* Yêu cầu 2: Đổ bóng */
+  /* 0px X, 5px Y, 18px Blur, 0 Spread, màu #000000 25% */
+  box-shadow: 0 5px 18px 0 rgba(0, 0, 0, 0.25);
+  
+  /* Xóa border-bottom vì đã có shadow */
+  /* Xóa font-family vì đã set global trong index.css */
+}
+
+/* Hình chữ nhật ngoài cùng */
+.header__left-shape {
+  position: absolute;
+  left: -20px; 
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px; 
+  height: 10px; 
+  /* Cập nhật: Dùng màu global (Giả định #f8bc24 là màu vàng) */
+  border: 2px solid var(--mau-phu-vang); 
+  border-radius: 20px; 
+  background: transparent;
+  z-index: 0;
+}
+
+/* Container */
+.header__container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.header__logo {
+  height: 45px;
+  object-fit: contain;
+}
+
+/* Nav */
+.header__nav {
+  display: flex;
+  gap: 40px; /* giãn rộng hơn */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Link */
+.header__nav-link {
+  text-decoration: none;
+  color: var(--mau-chinh-chu); /* Cập nhật: Dùng màu global */
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* giãn giữa icon và chữ */
+  letter-spacing: 0.3px; /* giãn nhẹ chữ */
+}
+
+/* Icon trước chữ */
+.header__icon {
+  font-size: 17px;
+  color: var(--mau-chinh-chu); /* Cập nhật: Dùng màu global */
+}
+
+/* Dropdown icon màu đỏ */
+.header__icon--dropdown {
+  font-size: 13px;
+  color: var(--mau-chinh-chu); /* Cập nhật: Dùng màu global */
+  margin-left: 6px;
+}
+
+/* CTA nhỏ hơn */
+.header__cta-button {
+  text-decoration: none;
+  background-color: var(--mau-chinh-chu); /* Cập nhật: Dùng màu global */
+  color: var(--mau-trang); /* Cập nhật: Dùng màu global */
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 700;
+  transition: opacity 0.3s ease;
+}
+
+.header__cta-button:hover {
+  opacity: 0.85;
+}
