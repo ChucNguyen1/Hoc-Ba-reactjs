@@ -4,6 +4,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 export const CoursesSection = () => {
   return (
     <section className="courses-section">
+      
       <div className="courses-section__container">       
         <div className="courses-section__grid">
           <div className="course-card">

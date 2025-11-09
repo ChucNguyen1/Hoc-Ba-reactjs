@@ -81,7 +81,6 @@
   font-weight: 700;
   transition: opacity 0.3s ease;
 }
-
 .header__cta-button:hover {
   opacity: 0.85;
 }

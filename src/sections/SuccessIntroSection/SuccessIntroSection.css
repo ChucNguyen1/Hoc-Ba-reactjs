@@ -83,12 +83,14 @@
   max-width: 50%;
   position: relative; 
 }
+
 .success-intro-section__main-image {
   width: 85%;
   height: auto;
   z-index: 1;
   position: relative;
 }
+
 .success-intro-section__decor-page {
   position: absolute;
   top: -50px;

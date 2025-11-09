@@ -68,6 +68,7 @@ export const StatsSection = () => {
         <span></span>
         <span></span>
       </div>
+      
     </section>
   );
 };

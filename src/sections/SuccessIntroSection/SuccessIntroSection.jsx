@@ -3,6 +3,7 @@ import { FaCheck } from 'react-icons/fa';
 import decorBookHat from '/book-hat.png';
 import personLaptop from '/success-laptop.png';
 import decorPage from '/success-book.png';
+
 export const SuccessIntroSection = () => {
   return (
     <section className="success-intro-section">

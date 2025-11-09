@@ -94,12 +94,12 @@
   position: absolute;
   width: 326px;
   height: 326px;
-  left: -160px;   /* Đẩy ra mép trái */
-  top: 300px;     /* Tùy chỉnh cao thấp */
+  left: -160px;   
+  top: 300px;     
   background: #FC461E;
   filter: blur(80px);
   border-radius: 50%;
-  z-index: 0;     /* Đặt dưới các phần khác */
+  z-index: 0;    
 }
 /* =================================
    SỐ 01, 02, 03
@@ -157,7 +157,6 @@
   font-weight: 700;
   padding: 8px 12px;
   border-radius: 20px;
-  /* Cập nhật: Shadow mới từ Figma (nhẹ hơn) */
   box-shadow: 0 3.6px 18.2px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;

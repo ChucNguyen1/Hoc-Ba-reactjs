@@ -43,7 +43,6 @@ export const HeroSection = () => {
         </div>
       </div>
 
-
       {/* ======== BÊN PHẢI ======== */}
       <div className="hero__image">
         <div className="hero__gradient-bg"></div>
