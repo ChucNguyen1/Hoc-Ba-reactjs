@@ -1,5 +1,3 @@
-/* Đặt ở file CSS global, ví dụ: src/index.css */
-
 /* 1. Định nghĩa các biến màu (CSS Custom Properties) */
 :root {
   --mau-chinh-chu: #af0000;
@@ -16,18 +14,11 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Giúp việc căn layout dễ hơn */
-
-  /* Thiết lập font SVN-Gilroy */
+  box-sizing: border-box; 
   font-family: 'SVN-Gilroy', sans-serif; 
-  font-weight: bold; /* Style: Bold */
+  font-weight: bold;
 
   /* Thiết lập màu nền và màu chữ mặc định */
-  background-color: var(--mau-trang); /* #ffffff */
-  color: var(--mau-chinh-chu);      /* #af0000 */
+  background-color: var(--mau-trang); 
+  color: var(--mau-chinh-chu);     
 }
-
-/* LƯU Ý: 
-Để font 'SVN-Gilroy' hoạt động, chúng ta cần import nó. 
-Nếu sếp có file font (.woff, .ttf...), sếp gửi em để em setup @font-face nhé.
-*/

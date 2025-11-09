@@ -1,4 +1,3 @@
-/* File: src/sections/StatsSection/StatsSection.css */
 .stats-section {
   width: 100%;
   background-color: #FAFAFA;
@@ -9,7 +8,7 @@
   display: flex;
 }
 
-/* === CỘT TRÁI (ĐỎ) === */
+/* === CỘT TRÁI === */
 .stats-section__left {
   flex: 54;
   background: linear-gradient(to right, #7D1900, #C1272D);
@@ -50,9 +49,8 @@
   color: var(--mau-phu-vang);
   font-size: 30px;
 }
-/* === CỘT PHẢI (TRẮNG) === */
+/* === CỘT PHẢI === */
 .stats-section__right {
-  /* SỬA: Tỉ lệ 46% */
   flex: 46;
 
   color: var(--mau-chinh-chu);
@@ -63,7 +61,7 @@
 }
 .stats-section__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 cột */
+  grid-template-columns: 1fr 1fr;
   gap: 30px 20px;
   width: 100%;
 }
@@ -71,18 +69,14 @@
   font-size: 30px;
 }
 .stats-section__item-text {
-  /* (Kế thừa font-weight: 700 từ body) */
   font-size: 16px;
   margin-top: 5px;
 }
 /* === DẤU CHẤM === */
 .stats-section__dots {
-  /* SỬA: Bỏ position: absolute */
   display: flex;
   justify-content: center;
   gap: 8px;
-
-  /* THÊM: Khoảng cách với 2 cột bên trên */
   margin-top: 40px;
 }
 .stats-section__dots span {

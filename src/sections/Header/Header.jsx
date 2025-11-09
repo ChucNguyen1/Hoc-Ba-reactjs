@@ -7,13 +7,11 @@ export const Header = () => {
     <header className="header">
       {/* Thanh vàng bên trái */}
       <div className="header__left-shape"></div>
-
       <div className="header__container">
         {/* Logo */}
         <a href="/" className="header__logo-link">
           <img src="/logo.png" alt="Học Bá Logo" className="header__logo" />
         </a>
-
         {/* Navigation */}
         <nav>
           <ul className="header__nav">

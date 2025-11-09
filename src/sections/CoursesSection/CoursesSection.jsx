@@ -1,22 +1,13 @@
-// File: src/sections/CoursesSection/CoursesSection.jsx
-
 import './CoursesSection.css';
-// [SỬA] Import icon sếp yêu cầu
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 export const CoursesSection = () => {
   return (
     <section className="courses-section">
-      <div className="courses-section__container">
-        
+      <div className="courses-section__container">       
         <div className="courses-section__grid">
-
-          {/* === CARD 1: HSK === */}
           <div className="course-card">
-            {/* Viền Gradient */}
             <div className="course-card__border"></div>
-            
-            {/* Nền Trắng + Nội dung */}
             <div className="course-card__content">
               <div className="course-card__icon">
                 <img src="/public/HSK.png" alt="Luyện Thi HSK" />
@@ -26,8 +17,6 @@ export const CoursesSection = () => {
                 Chương Trình Thiết Kế Cho HSK 9 Cấp, Luyện Thi Bản Bản Tả HSKH-HSKK Ôn Luyện Cùng Giảng Viên Giàu Kinh Nghiệm. Cam Kết Đầu Ra, Đảm Bảo Cù Thi Là Đỗ!
               </p>
             </div>
-            
-            {/* Nút */}
             <div className='course-card__button-wrapper'>
               <a href="#" className="course-card__button">
                 <IoIosArrowRoundForward className="course-card__button-icon" />

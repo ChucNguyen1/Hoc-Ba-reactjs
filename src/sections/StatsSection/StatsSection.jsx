@@ -5,7 +5,7 @@ export const StatsSection = () => {
     <section className="stats-section">
       <div className="stats-section__container">
        
-        {/* === CỘT TRÁI (NỀN ĐỎ) === */}
+        {/* === CỘT TRÁI === */}
         <div className="stats-section__left">
           <h2 className="stats-section__title">
             Tại Sao <br />
@@ -18,7 +18,7 @@ export const StatsSection = () => {
           </p>
         </div>
        
-        {/* === CỘT PHẢI (NỀN TRẮNG) === */}
+        {/* === CỘT PHẢI === */}
         <div className="stats-section__right">
           <div className="stats-section__grid">
            

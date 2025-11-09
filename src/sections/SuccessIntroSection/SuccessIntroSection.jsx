@@ -1,7 +1,5 @@
-// File: src/sections/SuccessIntroSection/SuccessIntroSection.jsx
 import './SuccessIntroSection.css';
 import { FaCheck } from 'react-icons/fa';
-// Giả định tên file ảnh trong /public/
 import decorBookHat from '/book-hat.png';
 import personLaptop from '/success-laptop.png';
 import decorPage from '/success-book.png';
@@ -15,22 +13,13 @@ export const SuccessIntroSection = () => {
           TIẾNG TRUNG KHÔNG CHỈ LÀ NGÔN NGỮ <br/>
           MÀ CÒN LÀ CÁNH CỬA DẪN ĐẾN THÀNH CÔNG
         </h2>
-        {/* === CONTAINER MỚI CHO 2 CỘT === */}
         <div className="success-intro-section__columns">
-       
-          {/* === CỘT BÊN TRÁI (NỘI DUNG) === */}
           <div className="success-intro-section__content">
-           
-            {/* Icon trang trí: Sách + Mũ */}
             <img
               src={decorBookHat}
               alt="Trang trí"
               className="success-intro-section__decor-book"
             />
-           
-            {/* (Heading đã bị kéo lên trên) */}
-           
-            {/* Danh sách lợi ích */}
             <div className="success-intro-section__benefits-list">
               <div className="success-intro-section__benefit-item">
                 <div className='success-intro-section__benefit-icon-wrapper'>
@@ -61,23 +50,19 @@ export const SuccessIntroSection = () => {
          
           {/* === CỘT BÊN PHẢI (HÌNH ẢNH) === */}
           <div className="success-intro-section__image-wrapper">
-           
-            {/* Hình 3D người + laptop */}
             <img
               src={personLaptop}
               alt="Tiếng Trung dẫn đến thành công"
               className="success-intro-section__main-image"
             />
-           
-            {/* Icon trang trí: Quyển sách */}
             <img
               src={decorPage}
               alt="Trang trí"
               className="success-intro-section__decor-page"
             />
           </div>
-        </div> {/* End: __columns */}
-      </div> {/* End: __container */}
+        </div> 
+      </div> 
     </section>
   );
 };
