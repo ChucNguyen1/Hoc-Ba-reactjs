@@ -1,4 +1,3 @@
-/* File: src/sections/MethodSection/MethodSection.css */
 .method-section {
   width: 100%;
   background-color: var(--mau-trang);
@@ -9,27 +8,26 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
-  text-align: center; /* Căn giữa toàn bộ nội dung */
+  text-align: center;
 }
 /* === PHẦN HEADING === */
 .method-section__heading {
-  margin-bottom: 50px; /* Khoảng cách xuống 3 cột */
+  margin-bottom: 50px;
+  text-align: center;
 }
 .method-section__title {
-  position: relative; /* "Mỏ neo" cho 4 dấu góc */
-  display: inline-block; /* Để các dấu góc bám vào */
+  position: relative;
+  display: inline-block;
   margin: 0 auto 20px auto;
   font-size: 38px;
-  color: var(--mau-den);
-  /* Kế thừa 'SVN-Gilroy' (Bold) từ body */
-  
-  /* Thêm padding để 4 dấu góc có chỗ đứng */
   padding: 20px 40px;
+  -webkit-background-clip: text;
+  background-color: #ffffff;
 }
 /* Style cho gạch chân (thẻ <u>) */
 .method-section__title u {
-  text-decoration-color: var(--mau-chinh-chu); /* Gạch chân đỏ */
-  text-underline-offset: 8px; /* Kéo gạch chân xuống */
+  text-decoration-color: var(--mau-chinh-chu);
+  text-underline-offset: 8px;
 }
 /* Style cho 4 dấu góc (icon) */
 .method-section__corner {
@@ -37,70 +35,83 @@
   font-size: 24px;
   color: var(--mau-chinh-chu);
 }
-.method-section__corner--tl { top: 0; left: 0; }
-.method-section__corner--bl { bottom: 0; left: 0; }
-/* SỬA: Xoay (flip) 2 icon bên phải */
+.method-section__corner--tl {
+  top: 0;
+  left: 0;
+}
+.method-section__corner--bl {
+  bottom: 0;
+  left: 0;
+  transform: scaleX(-1);
+}
 .method-section__corner--tr {
   top: 0;
   right: 0;
-  transform: scaleX(-1); /* Lật ngang */
+  transform: scaleX(-1);
 }
 .method-section__corner--br {
   bottom: 0;
   right: 0;
-  transform: scaleX(-1); /* Lật ngang */
 }
 .method-section__sub-heading {
-  font-size: 22px;
+  font-size: 25px;
   color: var(--mau-chinh-chu);
-  /* Kế thừa 'SVN-Gilroy' (Bold) từ body */
   margin: 0 0 10px 0;
+  margin-top: -30px;
+  z-index: 1;
 }
 .method-section__tagline {
-  font-size: 16px;
-  color: #555; /* Màu xám */
-  /* Kế thừa 'SVN-Gilroy' (Bold) từ body */
-  margin: 0;
+  display: inline-block;
+  margin: 20px 0 10px 0;
+  padding: 5px 15px;
+  font-size: 17px;
+  color: var(--mau-chinh-chu);
+  background: linear-gradient(to left, #FFDE90,#FFFFFF00);
+
 }
 /* === PHẦN GRID 3 CỘT === */
 .method-section__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  margin-bottom: 40px; /* Khoảng cách xuống 3 số */
-  text-align: left; /* Reset căn lề cho card */
+  margin-bottom: 40px;
+  text-align: left;
 }
 /* Đường bao màu vàng (border) */
 .method-section__column-border {
-  background-color: var(--mau-phu-vang); /* Màu vàng */
-  padding: 4px; /* Độ dày của đường bao */
-  border-radius: 20px; /* Bo góc ngoài */
-  height: 100%; /* Giúp 3 cột cao bằng nhau */
+
+  height: 100%;
 }
-/* Thẻ đỏ (nội dung) */
+
 .method-section__card {
-  background-color: var(--mau-chinh-chu); /* Màu đỏ */
+  background: linear-gradient(to left, #C1272D,#7D1900);
   color: var(--mau-trang);
   padding: 25px;
-  border-radius: 16px; /* Bo góc trong (nhỏ hơn 4px) */
-  height: 100%; /* Luôn lấp đầy border vàng */
+  border-radius: 25px; 
+  height: 100%;
+  box-sizing: border-box; 
+  position: relative; 
+  box-shadow: 
+    -18px -18px 0 0 white,
+    -20px -20px 0 0 var(--mau-phu-vang);
 }
+
 .method-section__card h3 {
-  /* Kế thừa 'SVN-Gilroy' (Bold) từ body */
   font-size: 20px;
   margin: 0 0 15px 0;
-  text-align: center; /* Căn giữa tiêu đề card */
+  text-align: center;
 }
 /* Tag trắng (Học chủ động...) */
 .method-section__card-tag {
   background-color: var(--mau-trang);
   color: var(--mau-chinh-chu);
-  /* Kế thừa 'SVN-Gilroy' (Bold) từ body */
-  font-size: 14px;
-  padding: 8px 12px;
-  border-radius: 8px;
-  display: inline-block; /* Chỉ rộng bằng text */
+  font-size: 17px;
+  padding: 10px 15px;
   margin-bottom: 20px;
+  text-align: center;
+  margin-left: -25px; 
+  margin-right: -25px;
+
 }
 /* Danh sách list */
 .method-section__card-list {
@@ -109,21 +120,21 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Khoảng cách 3 gạch đầu dòng */
+  gap: 15px;
 }
+
 .method-section__card-list li {
   display: flex;
-  align-items: flex-start; /* Căn icon và text ở trên */
+  align-items: flex-start;
   gap: 10px;
   font-size: 15px;
   line-height: 1.5;
 }
-/* SỬA: Icon dấu chấm tròn (FaCircle) */
 .method-section__card-list svg {
   color: var(--mau-trang);
-  font-size: 8px; /* Kích thước dấu chấm */
-  margin-top: 6px; /* Căn chỉnh với dòng text */
-  flex-shrink: 0; /* Không bị co lại */
+  font-size: 8px;
+  margin-top: 6px;
+  flex-shrink: 0;
 }
 /* === PHẦN ĐÁNH SỐ (3 VÒNG TRÒN) === */
 .method-section__numbering {
@@ -134,15 +145,14 @@
 .method-section__number-circle {
   width: 70px;
   height: 70px;
-  background-color: var(--mau-phu-vang);
+  background: linear-gradient(to right,#FFDE90, #C1272D);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto; /* Căn giữa vòng tròn */
+  margin: 0 auto;
 }
 .method-section__number-circle span {
   color: var(--mau-trang);
   font-size: 36px;
-  /* Kế thừa 'SVN-Gilroy' (Bold) từ body */
 }

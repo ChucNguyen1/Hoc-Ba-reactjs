@@ -14,13 +14,13 @@ export const MethodSection = () => {
             </span>
             <u>PHƯƠNG PHÁP HIỆU QUẢ</u>
             <span className="method-section__corner method-section__corner--tr">
-              <GrTopCorner style={{ transform: 'scaleX(-1)' }} />
+              <GrTopCorner  />
             </span>
             <span className="method-section__corner method-section__corner--bl">
               <GrBottomCorner />
             </span>
             <span className="method-section__corner method-section__corner--br">
-              <GrBottomCorner style={{ transform: 'scaleX(-1)' }} />
+              <GrBottomCorner  />
             </span>
           </h2>
           <p className="method-section__sub-heading">
