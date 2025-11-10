@@ -1,0 +1,123 @@
+/* === 1. Layout Section Chung === */
+.quality-section {
+  width: 100%;
+  background-color: var(--mau-trang);
+  padding: 40px 0;
+  overflow: hidden;
+}
+.quality-section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+/* === 2. CỘT TRÁI (NỘI DUNG) === */
+.quality-section__content {
+  flex: 1;
+  max-width: 55%;
+}
+.quality-section__title {
+  color: var(--mau-den);
+  font-size: 38px;
+  line-height: 1.3;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.quality-section__title span {
+    color: var(--mau-chinh-chu);
+}
+.quality-section__tagline {
+  color: #000000;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+/* === 3. Danh sách 3 thẻ đỏ === */
+.quality-section__features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: 0;
+}
+.quality-section__feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  color: var(--mau-trang);
+  padding: 10px 70px 10px 10px;
+  border-radius: 30px 30px;
+  background: linear-gradient(to right,#C0424A,#AC022E );
+}
+.quality-section__quote-icon {
+  font-family: Georgia, serif;
+  font-size: 50px;
+  line-height: 0.7;
+  color: #ffffff;
+  
+  position: relative;
+  top: 10px;
+}
+.quality-section__feature-text h3 {
+  font-size: 20px;
+  margin: 0 0 5px 0;
+  color: #FFDA45;
+}
+.quality-section__feature-text p {
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.9;
+  color: #ffffff;
+}
+
+/* File: src/sections/QualitySection/QualitySection.css */
+
+/* === 3. CỘT PHẢI (HÌNH ẢNH) === */
+.quality-section__image-wrapper {
+  flex: 1;
+  max-width: 45%;
+  
+  position: relative;
+  
+  min-height: 500px;
+}
+.quality-section__laptop-image {
+  width: 100%;
+  height: auto;
+  top: 50px;
+  position: relative;
+  z-index: 1;
+}
+.quality-section__girl-image {
+  position: absolute;
+  z-index: 2;
+  
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  width: 70%;
+  height: auto;
+}
+.quality-section__decor-spring {
+  position: absolute;
+  z-index: 3;
+  
+  top: 10%;
+  left: 20%;
+  width: 80px;
+}
+.quality-section__decor-target {
+  position: absolute;
+  z-index: 3;
+  
+  top: 0;
+  right: 1%;
+  width: 130px;
+}
